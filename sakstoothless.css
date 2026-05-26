@@ -569,6 +569,48 @@ input, select, textarea {
 	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
 }
 
+/* 🌙 BACKGROUND TABLE */
+.table {
+	background: #020408; /* deep night-sky black base */
+	border: 0px ridge;
+	text-shadow: 1px 1px 2px #000;
+	border-radius: 10px !important;
+	border-collapse: separate;
+	box-shadow: 0 0 12px rgba(0, 191, 255, 0.2); /* soft night-blue outer glow */
+
+	font-family: 'Ink Free', serif;
+}
+
+.table a:link {
+	color: #00BFFF !important; /* deep sky blue plasma glow */
+	transition: 0.5s!important;
+
+	font-family: 'Ink Free', serif;
+}
+
+.table a:visited {
+	color: #4682B4 !important; /* muted steel blue for visited links */
+	transition: 0.5s!important;
+
+	font-family: 'Ink Free', serif;
+}
+
+.table a:active {
+	color: #7B68EE !important; /* medium slate blue flash on click */
+	transition: 0.5s!important;
+
+	font-family: 'Ink Free', serif;
+} 
+
+.table a:hover {
+	color: #E0FFFF !important; /* bright bioluminescent cyan flash */
+	-webkit-transform: scale(1.1);
+	transition: 0.7s!important;
+	text-shadow: 0 0 8px #00BFFF, 0 0 12px #00F5FF; /* intense plasma charging effect */
+
+	font-family: 'Ink Free', serif;
+}
+
 /* 🌹 CREDITS (DO NOT REMOVE) */ 
 .breadcrumb::after { 
 	content: "CSS by Sak#327675"; 
@@ -595,7 +637,7 @@ input, select, textarea {
 
 	transition: 0.8s ease;
 
-	box-shadow: 1px 1px 5px #020406; 
+	box-shadow: 1px 1px 5px #030408; 
 
 	width: 200px;
 	height: 200px;
@@ -624,22 +666,22 @@ div.left img {
     border-bottom-right-radius: inherit;
 }
 
-/* 🧪 hover glow effect */
+/* 🧪 hover glow effect — blue-purple bioluminescent shift */
 .row.dynastycollection .dynastylist .left:hover {
 	transform: scale(1.03);
 
 	box-shadow:
-		0 0 14px rgba(0, 143, 168, 0.25), 
-		0 0 26px rgba(143, 165, 176, 0.18),
-		0 0 34px rgba(17, 28, 44, 0.20),
-		1px 1px 5px #020406;
+		0 0 14px rgba(0, 143, 168, 0.28),   /* Bioluminescent Cyan */
+		0 0 26px rgba(118, 75, 188, 0.22),   /* Deep Night Violet */
+		0 0 34px rgba(14, 17, 29, 0.40),
+		1px 1px 5px #030408;
 
 	filter: brightness(1.08) saturate(1.2);
 }
 
-/* 💙 BACKGROUND TABLE */
+/* 🌌 BACKGROUND TABLE — Blue/Purple Flight Aesthetic */
 .table {
-	background: #060b12; 
+	background: #0e111d; /* Deep midnight navy with a purple undertone */
 
 	border: 0px ridge;
 
@@ -649,7 +691,9 @@ div.left img {
 
 	border-collapse: separate;
 
-	box-shadow: 0 0 16px rgba(0, 143, 168, 0.15); 
+	box-shadow: 
+		0 0 16px rgba(118, 75, 188, 0.16),  /* Soft purple glow base */
+		0 0 8px rgba(0, 143, 168, 0.12);    /* Subtle overlapping cyan hue */
 
 	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
 }
