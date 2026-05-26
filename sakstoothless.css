@@ -1,0 +1,768 @@
+/* ========================================================= */
+/* 🌌 Sak (#327675) & Nvrquizn - HTTYD: Toothless Theme       */
+/* 💙 Deep navy & charcoal with bioluminescent cyan glows     */
+/* ========================================================= */
+
+/*
+- Do NOT resell or heavily edit.
+- Thank you so much for choosing my CSS, I hope you enjoy!
+*/
+
+/* Font Setup - Ink Free styling */
+@font-face {
+    font-family: 'Ink Free';
+    src: local('Ink Free'), local('InkFree');
+}
+
+:root {
+  /* ========================================================= */
+  /* 💎 BIOLUMINESCENT NIGHT FURY PALETTE                      */
+  /* ========================================================= */
+  --kolur1: #0a111c;      /* deep night navy */
+  --kolur170: #0a111cb3;
+
+  --kolur2: #111c2c;      /* dark flight charcoal-navy */
+  --kolur270: #111c2cb3;
+
+  --kolur3: #04070c;      /* absolute midnight black shadow */
+  --kolur370: #04070ccc;
+
+  --kolur350: #08101ad9;  /* deep oceanic glass obsidian */
+
+  --kolur4: #060b12;      /* dark flight casing shadow */
+  --kolur470: #060b12c9;
+
+  --kolur5: #d2e4eb;      /* pale silver/cyan highlight */
+  --kolur6: #020407;      /* alpha abyss black */
+  --kolur7: #008fa8;      /* subtle bioluminescent cyan/teal accent */
+
+  --kolur760: #0a111c45;
+  --kolur780: #111c2c45;
+
+  --darkgray: #020406;    /* alpha shadow */
+  --lightwhite: #c5d8e0d0;
+  --white: #ffffff;
+}
+
+/* ============================= */
+/* 🌊 BACKGROUND */
+/* ============================= */
+@media screen and (max-width: 800px){
+  body {
+    background: url('https://i.ibb.co/fd2kTspb/Screenshot-2026-05-26-at-13-49-03.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+    color: var(--kolur5) !important;
+  }
+
+  html:not(.nolayout) body:after {
+    content:"";
+    position:fixed;
+    top:0;
+    height:160vh;
+    left:0;
+    right:0;
+    z-index:-1;
+    background: linear-gradient(rgba(4, 7, 12, 0.65), rgba(2, 4, 7, 0.80)), url('https://i.ibb.co/fd2kTspb/Screenshot-2026-05-26-at-13-49-03.png') center center;
+    background-size: cover;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+    color: var(--kolur5) !important;
+  }
+	
+  .boxtopper {
+    padding: none;
+    float: left;
+    margin: -180px;
+    height: 30px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    margin-left: 0px;
+    pointer-events:none !important;
+  }
+}
+
+/* ============================= */
+/* 🌊 DESKTOP BACKGROUND */
+/* ============================= */
+@media screen and (min-width: 801px){
+  body {
+    background: linear-gradient(rgba(10, 17, 28, 0.55), rgba(4, 7, 12, 0.75)), url('https://i.ibb.co/fd2kTspb/Screenshot-2026-05-26-at-13-49-03.png') center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+    font-size: 16px !important;
+    color: var(--kolur5) !important;
+  }
+
+  .boxtopper {
+    padding: none;
+    float: right;
+    margin: -680px;
+    height: 30px;
+    width: 340px;
+    position: relative;
+    z-index: 3;
+    margin-right: -30px;
+    pointer-events:none !important;
+  }
+}
+
+/* Logo Replacer */
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+    content: url('https://i.ibb.co/KpH7bvtP/toothlesslogo-20260526142040.png');
+    width: 220px !important;
+    height: 120px !important;
+    object-fit: contain !important;
+}
+
+/* 🐾 Black Cat Paw Cursor */
+* {
+  cursor: url('https://cur.cursors-4u.net/nature/nat-10/nat981.cur'), auto !important; 
+}
+
+/* ============================= */
+/* 💙 CHAT MESSAGES */
+/* ============================= */
+#chatMessageList .s-chat-message:nth-child(even) {
+    background: rgba(17, 28, 44, 0.92) !important; 
+    color: #c5d8e0 !important; 
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+#chatMessageList .s-chat-message:nth-child(odd) {
+    background: rgba(10, 17, 28, 0.82) !important; 
+    color: #c5d8e0 !important;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.s-chat-message__pinned {
+    background: linear-gradient(90deg, rgba(6,11,18,0.95), rgba(0,143,168,0.20)) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 8px rgba(0,143,168,0.20); 
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.s-chat-message_timestamp {
+    color: #8fa5b0 !important; 
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+div#chatMessageContainer {
+    border: none !important;
+}
+
+button#label_currentChannel {
+    background: linear-gradient(90deg, #060b12, #111c2c) !important; 
+    color: #ffffff !important;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* ============================= */
+/* 💎 TOPBAR */
+/* ============================= */
+.container.topbar {
+    background: linear-gradient(180deg, rgba(14, 24, 38, 0.95), rgba(4, 7, 12, 0.95)) !important;
+    border-radius: 12px !important;
+    box-shadow: inset 0 0 20px rgba(0,143,168,0.08), 0 0 10px rgba(0,0,0,0.50) !important;
+    padding: 10px 15px !important;
+    backdrop-filter: blur(6px);
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.welcomeback {
+    color: #d2e4eb !important;
+    font-size: 15px;
+    text-shadow: 0 0 4px rgba(0,143,168,0.25);
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.welcomeback a {
+    color: #9ab4c2 !important;
+    font-weight: bold;
+    transition: 0.5s;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.welcomeback a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(0,143,168,0.40);
+}
+
+/* ============================= */
+/* 💙 LINKS */
+/* ============================= */
+.toplinks {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.toplinks li a {
+    color: #a9c5d4 !important; 
+    font-size: 10px;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 8px;
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover {
+    color: #ffffff !important; 
+    background: rgba(0, 143, 168, 0.15);
+    box-shadow: 0 0 8px rgba(0, 143, 168, 0.20);
+}
+
+.toplinks img.icon {
+    filter: drop-shadow(0 0 4px rgba(0, 143, 168, 0.20)) brightness(1.05);
+    transition: 0.4s ease;
+}
+
+.toplinks li a:hover img.icon {
+    filter: drop-shadow(0 0 8px rgba(0, 143, 168, 0.45)) brightness(1.15);
+}
+
+#silverBeetlesAmt,
+#goldBeetlesAmt {
+    color: #d2e4eb !important; 
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.toplinks li a[href*="logout"] {
+    color: #c5d8e0 !important;
+}
+
+.toplinks li a[href*="logout"]:hover {
+    background: rgba(0, 143, 168, 0.15);
+}
+
+/* ============================= */
+/* 💎 CAVES */
+/* ============================= */
+div.cave-grid > img {
+    height: 150px;
+    width: 200px;
+    opacity: 0.80;
+    border-radius: 10px !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.40) !important;
+    transition: 1s ease;
+}
+
+div.cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* unsorted lions */
+div.cave-grid > img[src$="unsortedlionsbanner.png"] {
+    content: url('https://i.ibb.co/FkDPkx4M/Screenshot-2026-05-26-at-13-53-11.png') !important;
+}
+
+div.cave-grid > img[src$="unsortedlionsbanner.png"]:hover {
+    content: url('https://i.ibb.co/FkDPkx4M/Screenshot-2026-05-26-at-13-53-11.png') !important;
+}
+
+/* nesting */
+div.cave-grid > img[src$="nestingbanner.png"] {
+    content: url('https://i.ibb.co/9HJ21zQN/Screenshot-2026-05-26-at-13-51-17.png') !important;
+}
+
+div.cave-grid > img[src$="nestingbanner.png"]:hover {
+    content: url('https://i.ibb.co/9HJ21zQN/Screenshot-2026-05-26-at-13-51-17.png') !important;
+}
+
+/* pride overview */
+div.cave-grid > img[src$="prideoverviewbanner.png"] {
+    content: url('https://i.ibb.co/r2ZtTz0w/Screenshot-2026-05-26-at-14-01-05.png') !important;
+}
+
+div.cave-grid > img[src$="prideoverviewbanner.png"]:hover {
+    content: url('https://i.ibb.co/r2ZtTz0w/Screenshot-2026-05-26-at-14-01-05.png') !important;
+}
+
+/* Heart */
+a[href="cave.php?id=529078"] .cave-grid > img {
+    content: url('https://i.ibb.co/tp6pwp8p/Screenshot-2026-05-26-at-14-01-45.png') !important;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+a[href="cave.php?id=4529078"] .cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* Breed */
+a[href="cave.php?id=534017"] .cave-grid > img {
+    content: url('https://i.ibb.co/wFy3j5Hc/Screenshot-2026-05-26-at-14-02-22.png') !important;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+a[href="cave.php?id=534017"] .cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* Nursery */
+a[href="cave.php?id=534933"] .cave-grid > img {
+    content: url('https://i.ibb.co/Z6n2M705/Screenshot-2026-05-26-at-14-03-34.png') !important;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+a[href="cave.php?id=534933"] .cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* Muties */
+a[href="cave.php?id=533500"] .cave-grid > img {
+    content: url('https://i.ibb.co/4Zv8Qprf/Screenshot-2026-05-26-at-14-04-27.png') !important;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+a[href="cave.php?id=533500"] .cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* Be Gone */
+a[href="cave.php?id=533437"] .cave-grid > img {
+    content: url('https://i.ibb.co/MkWtNJnh/Screenshot-2026-05-26-at-14-05-23.png') !important;
+    opacity: 0.7;
+    border-radius: 10px !important;
+    box-shadow: 1px 1px 5px var(--darkgray) !important;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+a[href="cave.php?id=533437"] .cave-grid > img:hover {
+    opacity: 1;
+    filter: brightness(1.05) contrast(1.02);
+}
+
+/* Cave Banner Unused */
+div.cave-grid > img[src$="caveunused.jpg"] {
+    content: url("https://i.ibb.co/V0QJQTS9/Screenshot-2026-05-26-at-14-07-02.png") !important;
+}
+
+/* ============================= */
+/* 💙 CAVE / PANEL STYLE */
+/* ============================= */
+.cave-grid,
+.mound-grid {
+    background: rgba(10, 17, 28, 0.88) !important; 
+    box-shadow: inset 0 0 15px rgba(0, 143, 168, 0.08), 0 0 12px rgba(0,0,0,0.60) !important;
+    border-radius: 12px !important;
+    text-shadow: 1px 1px 1.5px #020406;
+    max-height: 175px;
+    max-width: 250px;
+    overflow: hidden;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+    color: #ffffff !important;
+}
+
+.mound-grid img {
+    background: url('https://i.ibb.co/ZpmDbQsh/Screenshot-2026-05-26-at-14-08-46.png') no-repeat center !important;
+    width: 0; height: 0;
+    padding-top: 80px; padding-right: 130px;
+    background-size: contain !important; 
+    border-radius: 10px !important;
+    opacity: 0.80;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.55) !important;
+    transition: 1s ease;
+}
+
+.mound-grid img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+/* ============================= */
+/* 💎 GENERAL TYPOGRAPHY & LINKS */
+/* ============================= */
+a:link,
+a:visited {
+    color: #a9c5d4 !important; 
+    transition: 0.3s !important;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+a:hover {
+    color: #ffffff !important; 
+    text-shadow: 0 0 5px rgba(0, 143, 168, 0.40);
+}
+
+h1, h2, h3 {
+    text-shadow: 0 0 8px rgba(0, 143, 168, 0.15);
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+    color: #ffffff !important;
+}
+
+div#lion_image {
+    opacity: .90;
+    box-shadow: 0 0 12px rgba(0,0,0,0.50) !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+    margin-top: 19px; margin-left: 6px;
+    transition: .4s ease;
+}
+
+div#lion_image:hover {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 143, 168, 0.25) !important;
+}
+
+table#player img {
+    opacity: 0.90;
+    box-shadow: 0 0 10px rgba(0,0,0,0.45) !important;
+    border-radius: 8px;
+}
+
+/* ============================= */
+/* 💙 NAVBAR & MAIN BLOCKS */
+/* ============================= */
+.navbar {
+    background: #060b12; 
+    border-bottom: 0px ridge !important;
+    border-radius: 10px;
+    box-shadow: inset 0 -40px 60px rgba(14, 24, 38, 0.4), 0 0 10px rgba(0,0,0,0.5) !important;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 16px !important;
+    color: #ffffff !important;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: #111c2c;
+    color: #ffffff !important;
+    border-radius: 14px;
+    transition: 0.4s !important;
+}
+
+.container.main {
+    background: rgba(10, 17, 28, 0.65) !important;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 60px rgba(0, 143, 168, 0.05), 0 0 12px rgba(0,0,0,0.55) !important;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.col-md-9 {
+    background: none;
+    border-right: none;
+    color: #ffffff !important;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.breadcrumb {
+    background: #0b131f !important;
+    border: none !important;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.35) !important;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.breadcrumb .active {
+    color: #ffffff;
+    font-size: 16px !important;
+}
+
+/* ============================= */
+/* 💎 USER STYLING INTERFACES */
+/* ============================= */
+input.floatright, button.button {
+	background: rgba(0, 143, 168, 0.15) !important;
+	border: none;
+	border-radius: 8px !important;
+	color: #ffffff !important;
+	box-shadow: inset 0 0 10px rgba(0, 143, 168, 0.15) !important;
+	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+    padding: 6px 12px;
+}
+
+input.floatright:hover, button.button:hover {
+	background: rgba(0, 143, 168, 0.30) !important;
+	transition: .4s !important;
+}
+
+#commentBox, div.comment {
+	background: rgba(17, 28, 44, 0.75) !important;
+	box-shadow: 0 0 6px rgba(0,0,0,0.40) !important;
+	border: none !important;
+	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.panel {
+	background: #0f1a29 !important;
+	border: none !important;
+	border-radius: 10px;
+	color:#f5f5f5 !important;
+	box-shadow: 1px 1px 5px #000 !important;
+	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* BIOLUMINESCENT STAT BARS */
+.progress {
+	background: #04070c;
+	box-shadow: inset 1px 1px 3px #000 !important;
+	border-radius: 20px;
+}
+.progress-bar-warning { background: linear-gradient(#53a6b8, #184e59)!important; }
+.progress-bar-danger { background: linear-gradient(#1e5966, #071e24)!important; }
+.progress-bar-success { background: linear-gradient(#307f8f, #0d323b)!important; }
+.progress-bar { background: linear-gradient(#419bb0, #113f4a); border-radius: 20px; }
+
+/* Headers formatting */
+h1 { color: #ffffff; font-size: 54px; font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif; text-align: center; }
+h2 { color: #c5d8e0; font-size: 38px; text-align: center; font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif; }
+h3 { color: #f5f5f5 !important; font-size: 20px !important; font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif; }
+
+/* TABLES SETUP */
+.table {
+	background: #060b12; 
+	border: none;
+	border-radius: 10px !important;
+	box-shadow: 0 0 10px rgba(0,0,0,0.50);
+	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.top, .bottom, th {
+	background: #16263b !important;
+	color: #ffffff !important;
+	font-size: 15px !important;
+	border-radius: 8px;
+	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+.table .left, .inner-table .left {
+	background: #0e1724 !important;
+}
+
+input, select, textarea {
+	background: #0b131f !important;
+	border: none !important;
+	border-radius: 8px;
+	color: #ffffff !important;
+	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* 🌹 CREDITS (DO NOT REMOVE) */ 
+.breadcrumb::after { 
+	content: "CSS by Sak#327675"; 
+	color: #8fa5b0; 
+	font-size: 11px !important; 
+	position: absolute; 
+	right: 20%; 
+	margin: 5px;
+	z-index: 100;
+	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* ============================= */
+/* 💙 DYNASTY LIST */
+/* ============================= */
+.dynastylist .left {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+
+	transition: 0.8s ease;
+
+	box-shadow: 1px 1px 5px #020406; 
+
+	width: 200px;
+	height: 200px;
+	display: block;
+}
+
+/* ensure anchor doesn't collapse layout */
+.dynastylist a {
+	display: block;
+}
+
+/* shared behavior fix */
+.dynastylist .left {
+	display: block;
+}
+
+/* 💅 DYNASTY IMAGES */
+div.left img {
+    content: url('https://i.ibb.co/BVYVDPzH/Screenshot-2026-05-26-at-14-11-28.png') !important;
+    object-fit: cover;
+    object-position: top;
+    padding: 0;
+    height: 140px;
+    max-width: 140px !important;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+/* 🧪 hover glow effect */
+.row.dynastycollection .dynastylist .left:hover {
+	transform: scale(1.03);
+
+	box-shadow:
+		0 0 14px rgba(0, 143, 168, 0.25), 
+		0 0 26px rgba(143, 165, 176, 0.18),
+		0 0 34px rgba(17, 28, 44, 0.20),
+		1px 1px 5px #020406;
+
+	filter: brightness(1.08) saturate(1.2);
+}
+
+/* 💙 BACKGROUND TABLE */
+.table {
+	background: #060b12; 
+
+	border: 0px ridge;
+
+	text-shadow: 1px 1px 1.5px #000;
+
+	border-radius: 10px !important;
+
+	border-collapse: separate;
+
+	box-shadow: 0 0 16px rgba(0, 143, 168, 0.15); 
+
+	font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* ============================= */
+/* 🌌 CONTAINER */
+/* ============================= */
+.boxcontainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+/* ============================= */
+/* 🦇 BOX (NIGHT FURY THEME) */
+/* ============================= */
+.box {
+    flex: 1;
+    height: 240px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(17, 28, 44, 0.95),  /* Deep charcoal-navy flight shadow */
+        rgba(10, 17, 28, 0.95),  /* Midnight navy base */
+        rgba(0, 143, 168, 0.06)  /* Soft bioluminescent cyan undertone */
+    ) !important;
+
+    border: 1px solid rgba(210, 228, 235, 0.18); /* Muted silver/cyan border */
+
+    box-shadow:
+        0 0 18px rgba(0, 143, 168, 0.15),
+        inset 0 0 25px rgba(210, 228, 235, 0.05);
+
+    color: #d2e4eb; /* Pale silver highlight text */
+
+    padding: 12px;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    /* 👇 key: no scroll by default */
+    overflow: hidden;
+
+    transition: all 0.35s ease;
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* ============================= */
+/* 💎 BIOLUMINESCENT HOVER */
+/* ============================= */
+.box:hover {
+    height: 360px;         /* expands on hover */
+    overflow-y: auto;      /* enables scrolling */
+    
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 0 25px rgba(0, 143, 168, 0.35),
+        inset 0 0 35px rgba(169, 197, 212, 0.18);
+
+    border-color: rgba(169, 197, 212, 0.55);
+}
+
+/* ============================= */
+/* 🖼️ IMAGE SAFETY */
+/* ============================= */
+.box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 143, 168, 0.18);
+}
+
+/* ============================= */
+/* 🔤 HEADINGS */
+/* ============================= */
+.box h3 {
+    color: #ffffff; /* Crisp wingtip white */
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 18px;
+    text-shadow: 0 0 8px rgba(0, 143, 168, 0.55);
+    font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive, sans-serif;
+}
+
+/* ============================= */
+/* 📜 SCROLLBAR */
+/* ============================= */
+.box::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box::-webkit-scrollbar-track {
+    background: rgba(4, 7, 12, 0.9); /* Deep abyss black track */
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: linear-gradient(#008fa8, #a9c5d4); /* Cyan to pale silver gradient */
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 143, 168, 0.4);
+}
+
+/* ============================= */
+/* 📱 MOBILE */
+/* ============================= */
+@media (max-width: 767px) {
+    .boxcontainer {
+        flex-direction: column;
+    }
+    .box {
+        height: auto;
+    }
+}
